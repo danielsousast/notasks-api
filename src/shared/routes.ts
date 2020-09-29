@@ -1,9 +1,8 @@
 import express from 'express';
+import taskRoutes from '../modules/tasks/routes/tasks.routes';
 
 const routes = express.Router();
 
-routes.get('/', (request, response) => {
-  return response.json({ message: 'Started' });
-});
+routes.use('/tasks', taskRoutes);
 
 export default routes;
