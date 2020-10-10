@@ -16,7 +16,7 @@ tasksRoutes.post('/', (request:Request, response:Response) => {
 
 // Get all tasks
 tasksRoutes.get('/', (request:Request, response:Response) => {
-  const tasks = tasksRepository.find();
+  const tasks = tasksRepository.all();
 
   return response.json(tasks);
 });

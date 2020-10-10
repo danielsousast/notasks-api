@@ -15,7 +15,7 @@ class TasksRepository {
     return task;
   }
 
-  public find():Task[] {
+  public all():Task[] {
     return this.tasks;
   }
 }
